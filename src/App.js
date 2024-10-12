@@ -15,6 +15,7 @@ function App() {
       const sharedContent = params.get('link') || params.get('text') || 'Shared content';
       setMessages([...messages, { id: messages.length + 1, sender: "Shared", content: sharedContent }]);
     }
+    console.log("simple chat pwa app")
   }, []);
 
   const handleSendMessage = () => {
@@ -48,5 +49,6 @@ function App() {
     </div>
   );
 }
+
 
 export default App;
