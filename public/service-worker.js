@@ -1,6 +1,6 @@
 // service-worker.js
 
-import { precaching, registerRoute } from 'workbox-precaching';
+
 import { CacheFirst } from 'workbox-strategies';
 
 // Pre-cache assets
