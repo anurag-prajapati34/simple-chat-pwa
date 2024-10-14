@@ -6,7 +6,8 @@ import { CacheFirst } from 'workbox-strategies';
 // Pre-cache assets
 precaching.precacheAndRoute(self.__WB_MANIFEST || []);
 
-// Cache images
+
+// Cache images ..
 registerRoute(
   ({ request }) => request.destination === 'image',
   new CacheFirst({
